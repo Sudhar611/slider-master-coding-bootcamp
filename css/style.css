@@ -1,0 +1,97 @@
+html,body{
+  margin: 0;
+  height: 83%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+html{
+  height: 100%;
+  background-image: url("../images/pattern-bg.svg"),url("../images/pattern-curve.svg"),url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat,no-repeat,no-repeat;
+  background-position: 695px 49px, left bottom, 283px 165px;
+  background-size: 593px 543px,auto,auto;
+}
+
+.slide{
+  width: auto;
+  height:441px;
+  margin: 108px 155px;
+  position: relative;
+  display: none;
+  animation-duration: 1s;
+}
+
+@keyframes l2r1{
+  0%   {left:0px; top:0px;}
+  100%  {left:2000px; top:0px;}
+ }
+
+ @keyframes l2r2{
+   100%   {right:0px; top:0px;}
+   0%  {right:2000px; top:0px;}
+}
+
+
+@keyframes l2r1{
+  0%   {left:0px; top:0px;}
+  100%  {left:2000px; top:0px;}
+ }
+
+ @keyframes r2l2{
+   100%   {left:0px; top:0px;}
+   0%  {left:2000px; top:0px;}
+}
+
+@keyframes r2l1{
+  0%   {right:0px; top:0px;}
+  100%  {right:2000px; top:0px;}
+}
+
+
+
+.slide-image{
+  float: right;
+  height: inherit;
+  border-radius: 10px;
+  box-shadow: 1px 2px 37px 12px rgba(0, 0, 0, 0.3);
+}
+
+.slide-content{
+  width: 60%;
+  position: absolute;
+  top:90px;
+  left:30px;
+}
+
+.info{
+  font-weight: 500;
+  font-size: 20px;
+  color:#bdbbc8;
+}
+
+.name{
+  font-weight: 700;
+  color:#000;
+}
+
+.navigation{
+  position: absolute;
+  top:522px;
+  right: 450px;
+  background-color: #fff;
+  width: auto;
+  padding: 4px 15px;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.navigation img{
+  cursor:pointer;
+}
+
+.prev{
+  margin-right:35px;
+}
